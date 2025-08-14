@@ -1,0 +1,193 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: hsl(204, 43%, 93%);
+  color: hsl(218, 22%, 67%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 635px;
+  margin: 0 auto;
+}
+
+/* Price Grid */
+.price-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.header {
+  background-color: white;
+  padding: 40px;
+}
+
+.header h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  color: hsl(71, 73%, 54%);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.header p {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.7;
+}
+
+/* Subscription Section */
+.subscription {
+  background-color: hsl(179, 62%, 43%);
+  color: white;
+  padding: 40px;
+}
+
+.subscription h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.amount {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.period {
+  opacity: 0.7;
+}
+
+.subscription p {
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.sign-up-btn {
+  width: 100%;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-up-btn:hover {
+  background-color: hsl(71, 73%, 60%);
+}
+
+/* Why Us Section */
+.why-us {
+  background-color: hsl(179, 62%, 43%);
+  opacity: 0.8;
+  color: white;
+  padding: 40px;
+}
+
+.why-us h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.why-us ul {
+  list-style: none;
+}
+
+.why-us li {
+  margin-bottom: 5px;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .price-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  
+  .header {
+    grid-column: 1 / -1;
+  }
+  
+  .subscription {
+    grid-column: 1 / 2;
+  }
+  
+  .why-us {
+    grid-column: 2 / 3;
+  }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 767px) {
+  .header,
+  .subscription,
+  .why-us {
+    padding: 30px 25px;
+  }
+  
+  .header h1 {
+    font-size: 20px;
+  }
+  
+  .header h2 {
+    font-size: 16px;
+  }
+  
+  .amount {
+    font-size: 28px;
+  }
+} 
