@@ -58,6 +58,7 @@ body {
 .header p {
   color: hsl(218, 22%, 67%);
   line-height: 1.7;
+  font-size: 16px;
 }
 
 /* Subscription Section */
@@ -99,7 +100,7 @@ body {
   background-color: hsl(71, 73%, 54%);
   color: white;
   border: none;
-  padding: 15px;
+  padding: 12px;
   border-radius: 5px;
   font-family: 'Karla', sans-serif;
   font-size: 16px;
@@ -165,6 +166,10 @@ footer {
   .subscription {
     grid-column: 1 / 2;
   }
+
+  .sign-up-btn {
+    padding: 0;
+  }
   
   .why-us {
     grid-column: 2 / 3;
@@ -185,6 +190,10 @@ footer {
   
   .header h2 {
     font-size: 16px;
+  }
+
+  .header p {
+    font-size: 15px;
   }
   
   .amount {
