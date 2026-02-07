@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -19,14 +19,12 @@ body {
   padding: 20px;
 }
 
-/* Container */
 .container {
   width: 100%;
   max-width: 635px;
   margin: 0 auto;
 }
 
-/* Price Grid */
 .price-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -35,7 +33,6 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Header Section */
 .header {
   background-color: white;
   padding: 40px;
@@ -61,7 +58,6 @@ body {
   font-size: 16px;
 }
 
-/* Subscription Section */
 .subscription {
   background-color: hsl(179, 62%, 43%);
   color: white;
@@ -113,7 +109,6 @@ body {
   background-color: hsl(71, 73%, 60%);
 }
 
-/* Why Us Section */
 .why-us {
   background-color: hsl(179, 62%, 43%);
   opacity: 0.8;
@@ -137,7 +132,6 @@ body {
   font-size: 14px;
 }
 
-/* Footer */
 footer {
   margin-top: 40px;
   text-align: center;
@@ -152,7 +146,6 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 
-/* Responsive Design */
 @media (min-width: 768px) {
   .price-grid {
     grid-template-columns: 1fr 1fr;
@@ -176,7 +169,6 @@ footer {
   }
 }
 
-/* Additional responsive adjustments */
 @media (max-width: 767px) {
   .header,
   .subscription,
